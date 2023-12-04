@@ -27,8 +27,16 @@
       </div>
     </div>
 
-    <div class="container">
-      <h4 class="mb-3">1. Customer and Shipping Details</h4>
+    
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class = "col-md-8">
+            <div class="container">
+
+           
+        <h4 class="mb-3">1. Customer and Shipping Details</h4>
+      
       <form novalidate>
 
        <div class="row">
@@ -140,6 +148,7 @@
  <small class="text-muted">
     16 digit card number
  </small>
+
  <div class="invalid-feedback">
    Number on card is required
  </div>
@@ -161,13 +170,13 @@
 
     <div class="col-md-3">
        <label for ="Expiration" class="form-label">Expiration Date </label> 
-
-        
-       <input id="ccExpire" type ="text" class ="form-control" >
-      
-
+    <input id="ccExpire" type ="text" class ="form-control" >
+    <small class="text-muted">
+        MM/YY
+     </small>
        <div class="invalid-feedback">
           Expiration date is required
+      
         </div>
     </div>
 
@@ -177,14 +186,13 @@
          
         <input id="ccSecurity" type ="text" class ="form-control" >
        
- 
         <div class="invalid-feedback">
-           Expiration date is required
+          CVV is required
          </div>
          <small class="text-muted">
             3 digit security code back of the card
          </small>
-        </div>
+     </div>
 
 
 </div>
@@ -194,10 +202,65 @@
         <button class ="btn btn-primary btn-lg btn-block">Continue to checkout</button>
         
       </form>
-
     </div>
+</div>
+<div class="col-md-4">
+<div class="container col-8 my-5 br-2 rounded">
+    <div class="row g-3">
+        <div class="col-12">
+            <h4 class="d-flex justify-content-between align-item-center">
+                <span class="text-muted">Order Summary</span>
+                <span class="badge bg-secondary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6>Product name</h6>
+                        <span class="text-muted">Brief Description</span>
+                    </div>
+                    <span class="text-muted">£</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6>Second Product</h6>
+                        <span class="text-muted">Brief Description</span>
+                    </div>
+                    <span class="text-muted">£</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6>Third Product</h6>
+                        <span class="text-muted">Brief Description</span>
+                    </div>
+                    <span class="text-muted">£</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="text-success">Promo Code</h6>
+                        <span class="text-muted">EXAMPLE CODE</span>
+                    </div>
+                    <span class="text-muted">£</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6>Total </h6>
+                    </div>
+                    <span class="text-muted">£</span>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+<!--<div class="col-4">
+    <h4 class="d-flex">
+        <span class="text-muted">Summary</span>
+        <span>...</span>
+    </h4>
 
-    <!-- JavaScript;  -->
+</div>
+     JavaScript;  -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
