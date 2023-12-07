@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review your basket.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    #navbar {
+      background-color: #660066;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #navbar img {
+      width: 40px;
+      height: 40px;
+    }
+
+    #search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    #search-bar input {
+      width: 60%;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #home-bar{
+      display: flex;
+      align-items: center;
+    }
+
+    #home-bar img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    #profile-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    #profile-bar img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    #basket-icon{
+      display: flex;
+      align-items: center;
+    }
+
+    #basket-icon img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    #cart-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #1a1a1a;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the content */
+    }
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      color: #ffffff;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #660066;
+      width: 300px; 
+    }
+
+    #total {
+      font-size: 1.2em;
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #660066;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4d004d;
+    }
+
+    #checkout-button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #660066;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #checkout-button:hover {
+      background-color: #4d004d;
+    }
+
+    .remove-button {
+      background-color: #4d004d;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .remove-button:hover {
+      background-color: #4d004d;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+<div id="navbar">
+  <img src="images/logo.png" alt="Icon">
+  <div id="search-bar">
+    <input type="text" placeholder="Search...">
+  </div>
+</div>
+</nav>
+
+
+<div id="cart-container">
+  <h2>Your Orders.</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Order number</th>
+        <th>Product description</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Order Status</th>
+        
+      </tr>
+      <th>#order 516789</th>
+      <tr></tr>
+      <th><img src="images/iphone project.webp"></th>
+      <th><small> Ipad 9.7 (2018) 6th gen 32 Go - WiFi - Space Gray</small></th>
+      <th><input type="number" value="1"</th>
+      <th><small>£350.00</small></th>
+      <th><small>Delivered 27th September</small></th>
+      <th><button id="Buy again">Buy again</button>
+        <button id="return">return</button></th>
+        
+    </thead>
+  </table>
+ 
+
+  <table>
+    <thead>
+      <tr>
+        <th>Order number</th>
+        <th>Product description</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Order Status</th>
+        
+      </tr>
+      <th>#order 516789</th>
+      <tr></tr>
+      <th><img src="images/iphone project.webp"></th>
+      <th><small> iphone 12 64GB Unlocked 4G - colour white</small></th>
+      <th><input type="number" value="1"</th>
+      <th><small>£750.00</small></th>
+      <th><small>Delivered 29th September</small></th>
+      <th><button id="Buy again">Buy again</button>
+        <button id="return">return</button></th>
+        
+    </thead>
+  </table>
+ 
+
+  <table>
+    <thead>
+      <tr>
+        <th>Order number</th>
+        <th>Product description</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Order Status</th>
+        
+      </tr>
+      <th>#order 516789</th>
+      <tr></tr>
+      <th><img src="images/iphone project.webp"></th>
+      <th><small> MacBook Pro 13.3-inch (2020)8GB RAM - SSD 256GB</small></th>
+      <th><input type="number" value="1"</th>
+      <th><small>£1250.00</small></th>
+      <th><small>Delivered 30th September</small></th>
+      <th><button id="Buy again">Buy again</button>
+        <button id="return">return</button></th>
+        
+    </thead>
+  </table>
+ 
+</div>
+
+
+</body>
+</html>
