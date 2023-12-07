@@ -12,21 +12,55 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="checkoutStyle.css">
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the elements
+      const payByCardSection = document.getElementById('payByCardSection');
+      const promoCodeSection = document.getElementById('promoCodeSection');
+      const cardRadio = document.getElementById('Card');
+      const promoRadio = document.getElementById('Promo');
+  
+      // Function to toggle visibility based on radio button selection
+      function toggleSections() {
+        if (cardRadio.checked) {
+          payByCardSection.style.display = 'block';
+          promoCodeSection.style.display = 'none';
+        } else if (promoRadio.checked) {
+          payByCardSection.style.display = 'none';
+          promoCodeSection.style.display = 'block';
+        }
+      }
+  
+      // Initial toggle based on default radio button selection
+      toggleSections();
+  
+      // Attach event listeners to radio buttons to handle changes
+      cardRadio.addEventListener('change', toggleSections);
+      promoRadio.addEventListener('change', toggleSections);
+    });
+  </script>
+ 
+  
     <title>Nova Checkout</title>
   </head>
-  <body class="bg-light">
+  <body>
     <!--Class where all the information will go and so the page is responsive (responsible for the padding)-->
     <div class="container">
-      <div class="py-5">
-        <!--Where Imma put my image-->
-
-        <h2>Nova Checkout Page</h2>
-        <p class="lead">Secure Checkout</p>
-        <!--Custom font-->
-      </div>
-    </div>
-
+        <div class ="row">
+            <div class ="col-md-4">
+                <img src ="logo.png" alt="Nova Logo" class="img-fluid mt-4" style = "width: 100px">
+            </div>
+            <div class ="col-md-8">
+                  <div class="py-5">
+                    <h2>Nova Checkout Page</h2>
+                    <p class="lead">Secure Checkout</p>
+                    <!--Custom font-->
+                  </div>
+                </div>
+            </div>
+            </div>
     
 
     <div class="container-fluid">
@@ -35,9 +69,9 @@
             <div class="container">
 
            
-        <h4 class="mb-3">1. Customer and Shipping Details</h4>
+        <h4 class="mb-2">1. Customer and Shipping Details</h4>
       
-      <form novalidate>
+      <form id="CheckoutForm" novalidate>
 
        <div class="row">
  <div class="mb-3">
@@ -126,20 +160,39 @@
             </div> 
          </div>
         
+         <!--Payment Section-->
          <h4 class= "mb-3">2. Payments</h4>
 
-        <div class="form-check">
+         <!--Pay by card radio button-->
+        
+         <div class="form-check">
             <input id ="Card" name="payment method" type="radio" class="form-check-input" checked required>
             <label for ="Card"> Pay in full via card </label>
         </div>
+       
 
+<!--Promo/Discout code radio button-->
        <div class="form-check">
             <input id ="Promo" type="radio" class="form-check-input"  required>
             <label for ="Promo"> Add a promo/discount code </label>
         </div>
+       
+
+
+
+
+      
         
 <div class="row my-3 gy-3">
 
+     <!--User inputting promo code-->
+     <div class="mb-3">
+        <label for="promoCode" class="form-label">Redeem Promo/Discount Code</label>
+        <input id="promoCode" type="text" class="form-control">
+        <small class="text-muted">Enter a valid code 
+        </small>
+      </div>
+      
     <div class="col-md-6">
         <label for = "Cardnumber" class = form-label>
             Card Number</label>
@@ -283,3 +336,4 @@
     ></script>
   </body>
 </html>
+
