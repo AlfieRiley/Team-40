@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- CONTACT US SECTION -->
+
+    <!-- navigation bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+            <span class="brand-name">Nova</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- sign in button -->
+        <div class="signin-btn">
+            <a href="#">Sign In</a>
+        </div>
+    </div>
+
+    <!-- contact us copy text -->
+    <div id="contact-copy">
+        <h2>Contact Us.</h2>
+        <p>Need assistance? Our support team is here for you. </p>
+        <p>Drop us a message, and our admin team will get in touch.</p>
+    </div>
+
+    <!-- contact form -->
+    <div id="contact-form">
+        <form action="#" method="post">
+            <div class="name-container">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" aria-label="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
+            </div>
+
+            <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email" required>
+
+            <input type="tel" id="phone" name="phone" placeholder="(+123) 01234-56789" maxlength="17" aria-label="Phone Number">
+
+            <select id="department" name="department" aria-label="Department" required>
+                <option value="" disabled selected>Select an admin inquiry category</option>
+                <option value="order issues">Order Issues</option>
+                <option value="account info">Account Info</option>
+                <option value="payment questions">Payment Questions</option>
+                <option value="product support">Product Support</option>
+                <option value="other">Other</option>
+            </select>
+
+            <textarea id="message" name="message" placeholder="How can we assist?" rows="4" aria-label="Message" required></textarea>
+
+            <input type="submit" value="Submit Message">
+            <p class="consent-message">By clicking submit, you consent to the processing of your data in accordance with
+                <a href="https://gdpr-info.eu" target="_blank" rel="noopener noreferrer">GDPR regulations</a>.</p>
+        </form>
+    </div>
+
+    <!-- GET IN TOUCH SECTION -->
+
+    <!-- google maps embedded-->
+    <div id="git-container">
+        <div id="git">
+            <h2>Get in touch.</h2>
+        </div>
+        <div id="get-in-touch">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.5860742985105!2d-1.8898570000000001!3d52.4866299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd2e9cf474ef%3A0xb48a787296dbcd89!2sAston%20University%20Main%20Building!5e0!3m2!1sen!2suk!4v1701121510992!5m2!1sen!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="info">
+                <div class="info-container">
+                    <div class="info-square">
+                        <img src="phone_icon.png" alt="Phone Icon" />
+                        <p>+123 456 789</p>
+                    </div>
+
+                    <div class="info-square">
+                        <img src="email_icon.png" alt="Email Icon" />
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+
+                <div class="info-container">
+                    <div class="info-square">
+                        <img src="ig_icon.png" alt="Instagram Icon" />
+                        <p>@novatech</p>
+                    </div>
+
+                    <div class="info-square">
+                        <img src="github_icon.png" alt="Github Icon" />
+                        <p>team 40</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
