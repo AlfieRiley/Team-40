@@ -1,0 +1,316 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    background-color: #101010;
+}
+
+/* nav bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+    border: #fff;
+}
+
+.brand-name {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #9867FF;
+    text-shadow: 0 0 20px #9867FF;
+    box-shadow: none;
+}
+
+/* shrink nav bar font when on small screens*/
+@media only screen and (max-width: 768px) {
+    nav a {
+        font-size: 0.8em;
+    }
+
+    .brand-name {
+        font-size: 1.5em; 
+    }
+}
+/* sign in button */
+.signin-btn a {
+    text-decoration: none;
+    background-color: #9867FF;
+    color: #101010;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.signin-btn a:hover {
+    background-color: #5724c5;
+}
+
+/* contact form */
+#contact-form {
+    background-color: #101010;
+    padding: 20px;
+   
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* contact form copy text */
+#contact-copy {
+    background-color: #101010;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact-copy p {
+    font-size: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+  
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    font-size: 80%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* labels required for screenreaders */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* putting first and last name fields on the same line */
+.name-container {
+    display: flex;
+    gap: 15px;
+}
+
+/* form field styling */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #101010;
+    color: white;
+    font-size: 14px;
+}
+
+/* removes default styling of dropdown select elem */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('dropdown.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    color: rgb(198, 198, 198);
+}
+
+/* changes outline color of fields when the user clicks */
+select:focus {
+    border-color: #d58bff;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d58bff;
+    outline: none;
+    resize: vertical;
+}
+
+/* styling for placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: rgb(198, 198, 198);
+    opacity: 0.7;
+}
+
+/* submit form button */
+input[type="submit"] {
+    background-color: #9867FF;
+    color: rgb(14, 14, 14);
+    width: auto;
+    flex-shrink: 0;
+    min-width: 120px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #5724c5;
+}
+
+.consent-message {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 40%;
+    padding-bottom: 50px;
+}
+
+.consent-message a {
+    color: #fff;
+}
+
+/* get in touch */
+#git-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #5724c5;
+    border-radius: 8px;
+   height: 100%;
+
+   margin: 0 auto;
+   
+}
+
+#git {
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+
+#git h2{
+ padding-top: 1em;
+}
+#get-in-touch {
+  display: flex;
+    width: 100%;
+
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    width: 50%;
+    min-height: 100%;
+    border-radius: 8px;
+}
+
+#map iframe {
+    border: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.info-square {
+    background-color: #fff;
+
+    border-radius: 8px;
+    text-align: center;
+    width: calc(50% - 10px); 
+    height: 150px;
+    margin-bottom: 20px; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.info-square img {
+    height: 50px;
+    width: 50px;
+}
+
+.info-square p{
+    color: #101010;
+    overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+    #info-container {
+    
+        align-items: center;
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    #info{
+        order:2;
+    }
+
+    .info-square {
+        width: 100%; /* Full width for smaller screens, one square per row */
+    }
+}
