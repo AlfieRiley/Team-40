@@ -1,0 +1,206 @@
+<DOCTYPE html>
+    <html lang = "en"></html>
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="homecss/homestylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Nova</title>
+    </head>
+
+    <!--All Product Images have been used from the official Apple and Samsung Websites-->
+    <!--See references in PDF document-->
+
+    <body>
+        <header class="main-header">
+            <section class="nav_bar">
+                <div>
+                    <section class="nova">
+                        <img src="homepageimages/Nova Logo.png" width="60" height="60">
+                    </section>
+                    <section class="logo">
+                        <h2>Nova</h2>
+                    </section>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html">Home</a></li> 
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href=""><img src="homepageimages/Account.png" width="60" height="50"></a></li>
+                            <li><a href=""><img src="homepageimages/Basket.png" width="60" height="50"></a></li>
+                            <li><a href=""><img src="homepageimages/Search.png" width="60" height="50"></a></li> 
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+<div class="slideshowContainer">
+
+    <div class="slideshow">
+        <img src="homepageimages/Slideshow MacBook.png" width="100%">
+        <h2 class="MacBookText">MacBook</h2>
+        <p class="MacBookInfo">The Design Powerhouse</p>
+        <button class="MacBookButton">Buy</button>
+    </div>
+
+    <div class="slideshow">
+        <img src="homepageimages/Slideshow Tablet.png" width="100%">
+        <h2 class="tabletText">Galaxy Tab S9 Series</h2>
+        <p class="tabletInfo">The New Series Out Now</p>
+        <button class="tabletButton">Buy</button>
+    </div>
+
+    <div class="slideshow">
+        <img src="homepageimages/Slideshow iMac.png" width="100%">
+        <h2 class="iMacText">iMac</h2>
+        <p class="iMacInfo">Sleek. Reliable. Innovative.</p>
+        <button class="iMacButton">Buy</button>
+    </div>
+
+    <div class="slideshow">
+        <img src="homepageimages/Slideshow Watch.png" width="100%">
+        <h2 class="watchText">Galaxy Watch6 Series</h2>
+        <p class="watchInfo">Smartphone at your wrist</p>
+        <button class="watchButton">Buy</button>
+    </div>
+
+    <button class="right" onclick="plus(1)">Next</button> 
+    <button class="left" onclick="plus(-1)">Previous</button>
+</div>
+
+<script>
+    //For this section of code (i.e JavaScript), I used W3Schools, specifically W3.CSS Slideshow page. See references in PDF. 
+
+    var slideIndex = 1; //Holding the index of the first image
+    showSlide(slideIndex); //This function is called so that the current image can be displayed onscreen
+
+    function plus(n){ //This function either adds or subtracts 1 from the value stored in slideIndex depending on which buttons are pressed
+        showSlide(slideIndex += n);
+    }
+
+    function showSlide(n){
+        var i;
+        var s = document.getElementsByClassName("slideshow"); //Getting the images from this HTML document by their class names
+
+        if(n > s.length){ //If the slideIndex exceeds the number of images, it is set back to 1 (i.e back to the original/first slide)
+            slideIndex = 1;
+        }
+
+        if(n < 1){ //If the slideIndex becomes less than 1, it is then set back to the last image (i.e reverse order)
+            slideIndex = s.length;
+        }
+
+        for(i=0; i < s.length; i++){ //Iterating over the images 
+            s[i].style.display = "none"; //Hiding all images from being displayed. 
+        }
+
+        s[slideIndex-1].style.display = "block"; //Displaying the image that the slideIndex is currently on
+        //We subtract 1 from the index because of the for loop starting at 0. 
+    }
+    
+</script>
+
+
+<h2 class="recommendations">Recommended Products</h2>
+
+<section class="container">
+    <div class="product1">
+        <h2>AirPods Max</h2>
+        <img src="homepageimages/AirPods Max.png" width="200" height="200">
+        <h4>Wireless. Effortless. Iconic.</h4>
+        <br>
+        <p>From £499</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+    <div class="product2">
+        <h2>AirPods</h2>
+        <img src="homepageimages/AirPods.png" width="180" height="200">
+        <h4>Top-tier Audio</h4>
+        <br>
+        <p>From £129</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+    <div class="product3">
+        <h2>iPad Pro</h2>
+        <img src="homepageimages/iPad.png" width="200" height="200">
+        <h4>The New Pro</h4>
+        <br>
+        <p>From £899</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+    <div class="product4">
+        <h2>iPhone 14</h2>
+        <img src="homepageimages/iPhone 14.png" width="170" height="200">
+        <h4>As classy as ever</h4>
+        <br>
+        <p>From £699</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+</section>
+
+<h2 class="latest">Latest Deals</h2>
+
+<section class="allcontainers">
+
+<section class="containers1">
+    <div class="deal1">
+        
+        <img src="homepageimages/MacBook.png" width="340" height="200">
+        <h4>Enjoy £300 off the latest MacBook of your choice</h4>
+        <br>
+        <p>when you spend over £2,500</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+</section>
+
+<section class="containers2">
+    <div class="deal2">
+        
+        <img src="homepageimages/iPhone.png" width="170" height="200">
+        <h3>Claim upto £400 cashback</h3>
+        <br>
+        <p>on selected iPhones</p>
+        <br>
+        <button class="button">Buy</button>
+        
+    </div>
+    <div class="deal3">
+        <img src="homepageimages/iMac.png" width="200" height="200">
+        <h3>Get 15% off your first Nova order</h3>
+        <br>
+        <p>use code NOVA15 at checkout</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+</section>
+
+<section class="containers3">
+    <div class="deal4">
+        <img src="homepageimages/Apple Watch.png" width="200" height="200">
+        <h3>Claim £50 cashback and free AirPods</h3>
+        <br>
+        <p>when you buy an Apple Watch SE</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+    <div class="deal5">
+        <img src="homepageimages/Galaxy S23.png" width="170" height="200">
+        <h3>Claim upto £400 cashback</h3>
+        <br>
+        <p>on selected Samsung Galaxy Smartphones</p>
+        <br>
+        <button class="button">Buy</button>
+    </div>
+</section>
+
+</section>
+    </body>
+</DOCTYPE>
