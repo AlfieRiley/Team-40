@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+
+
+.main-header{
+    width: 100%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: black;
+   }
+  
+   .nav_bar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+   }
+
+   .nova {
+    float:left;
+    padding-top: 10px;
+    padding-left: 1px;
+   }
+
+   .logo{
+    width: 200px;
+    float: left;
+    height: 70px;
+    color:white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+   }
+    
+   .menu{
+    width: 700px;
+    float: right;
+    height: 70px;
+   }
+  
+   ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+  
+   ul li{
+    list-style: none; 
+    margin-left: 62px;
+    margin-top: 15px;
+    font-size: 22px;
+    color:white;
+    font-family: 'Inter', sans-serif;
+    text-wrap: nowrap;
+   }
+
+   ul li a{
+    color:white;
+    text-decoration: none;
+   }
+
+.recommendations {
+    color:white;
+    text-align:center;
+    border: 2px solid purple;
+    margin:50px;
+    padding:30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display:flex;
+    background-color: rgba(128, 0, 128, 0.4);
+    justify-content: center;
+    margin:50px;
+    flex-direction: row;
+}
+
+.container div{
+    background-color: white;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    padding:30px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.container p{
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+.latest{
+    color:white;
+    text-align:center;
+    border: 2px solid purple;
+    margin:50px;
+    padding:30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.allcontainers{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height:fit-content;
+    justify-content: center;
+    margin:30px;
+}
+
+.allcontainers p{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.containers1{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(128, 0, 128, 0.4);
+    margin:20px;
+    padding: 20px;
+}
+
+.containers2{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(128, 0, 128, 0.4);
+    margin:20px;
+    padding:20px;
+}
+
+.containers3{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(128, 0, 128, 0.4);
+    margin:20px;
+    padding:20px;
+}
+
+.containers1 div{
+    background-color: white;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    padding:30px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.containers2 div{
+    background-color: white;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    padding:30px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.containers3 div{
+    background-color: white;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    padding:30px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.button{
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    padding:15px 30px;
+    margin: 10px;
+    transition-duration: 0.4s;
+    font-family: 'Inter', sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(128, 0, 128);
+    color:white;
+}
+
+.slideshow{
+    width:100%;
+    display: none;
+}
+
+.right{
+    position: absolute;
+    top:320px;
+    right:10px;
+    background-color: grey;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    border-radius: 30px;
+    padding:20px;
+    margin: 10px;
+    float: right;
+    transition-duration: 0.4s;
+    color:white;
+    font-family: 'Inter', sans-serif;
+}
+
+.right:hover{
+    background-color: black;
+    color:white;
+}
+
+.left{
+    position:absolute;
+    top:320px;
+    left:10px;
+    background-color: grey;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    border-radius: 30px;
+    padding:20px;
+    margin: 10px;
+    float:left;
+    transition-duration: 0.4s;
+    color:white;
+    font-family: 'Inter', sans-serif;
+}
+
+.left:hover{
+    background-color: black;
+    color:white;
+}
+
+.slideshowContainer{
+    position: relative;
+    text-align: center;
+}
+
+.text{
+    position: absolute;
+    top:50px;
+    bottom:50px;
+    color:black;
+}
+
+.tabletText{
+    position: absolute;
+    color:black;
+    top: 50px;
+    right: 65px;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.tabletInfo{
+    position: absolute;
+    color:black;
+    top: 120px;
+    right: 268px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
+
+.tabletButton{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    padding:15px 30px;
+    margin: 10px;
+    transition-duration: 0.4s;
+    top: 170px;
+    right: 268px;
+    font-family: 'Inter', sans-serif;
+}
+
+.tabletButton:hover{
+    background-color: grey;
+}
+
+.watchText{
+    position: absolute;
+    color:black;
+    top: 50px;
+    left: 30px;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.watchInfo{
+    position: absolute;
+    color:black;
+    top: 120px;
+    left: 30px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
+
+.watchButton{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    padding:15px 30px;
+    margin: 10px;
+    transition-duration: 0.4s;
+    top: 170px;
+    left: 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.watchButton:hover{
+    background-color: grey;
+}
+
+.iMacText{
+    position: absolute;
+    color:black;
+    top: 50px;
+    left: 30px;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.iMacInfo{
+    position: absolute;
+    color:black;
+    top: 120px;
+    left: 12px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
+
+.iMacButton{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    padding:15px 30px;
+    margin: 10px;
+    transition-duration: 0.4s;
+    top: 170px;
+    left: 70px;
+    font-family: 'Inter', sans-serif;
+}
+
+.iMacButton:hover{
+    background-color: grey;
+}
+
+.MacBookText{
+    position: absolute;
+    color:black;
+    top: 50px;
+    left: 560px;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.MacBookInfo{
+    position: absolute;
+    color:black;
+    top: 120px;
+    left: 545px;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+}
+
+.MacBookButton{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    padding:15px 30px;
+    margin: 10px;
+    transition-duration: 0.4s;
+    top: 170px;
+    left: 600px;
+    font-family: 'Inter', sans-serif;
+}
+
+.MacBookButton:hover{
+    background-color: grey;
+}
+
+
+  
+  
