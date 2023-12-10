@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contactstyle.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
 
 <body>
     <!-- CONTACT US SECTION -->
-
+    <div class="contact-section">
     <!-- navigation bar -->
     <div class="navbar">
         <div class="logo">
@@ -50,8 +50,10 @@
     </div>
 
     <!-- contact form -->
+    
     <div id="contact-form">
-        <form action="#" method="post">
+        
+        <form action="submitform.php" method="post"> <!-- run script-->
             <div class="name-container">
                 <input type="text" id="first-name" name="first-name" placeholder="First Name" aria-label="First Name" required>
                 <input type="text" id="last-name" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
@@ -78,8 +80,10 @@
         </form>
     </div>
 
-    <!-- GET IN TOUCH SECTION -->
+    </div>
 
+    <!-- GET IN TOUCH SECTION -->
+<div class="get-in-touch-section">
     <!-- google maps embedded-->
     <div id="git-container">
         <div id="git">
@@ -119,7 +123,24 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </nav>
+    <p>&copy; Team 40 Nova</p>
+</footer>
 
 </body>
 
 </html>
+
