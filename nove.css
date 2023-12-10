@@ -1,0 +1,160 @@
+/* Custom CSS for your dark mode styles */
+/* Adjust as needed */
+
+body {
+     background-image: linear-gradient(#1f1e1f, #19191b); /* Dark background color */
+     .h1,h2,h3{
+      font-family: 'Inter';
+      color: #c300ff;
+      font-weight: 600;
+     }
+     .h,h1{
+      font-family:'Inter';
+     }
+     .p{
+      font-family: 'Inter';
+     }
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: #ffffff; /* White text color for navbar brand */
+  }
+  
+  .card {
+    background-color: #444; /* Darker background for cards */
+  }
+  
+  .btn-primary {
+    background-color: #2e103d; /* Primary button color */
+    border-color: #2e103d;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2e103d; /* Darker hover color for primary button */
+    border-color: #2e103d;
+  }
+
+.jumbotron{
+  background-color: #000000;
+}
+
+.shadowbox{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px rgb(195, 0, 255);
+  margin: 20px;
+}
+
+.btn {
+  border: 2px solid rgb(195, 0, 255);
+  background-color: transparent;
+  color: rgb(195, 0, 255);
+  padding: 10px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 256ms all;
+  border-radius: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #2e103d;
+  color: #fff;
+  border: 0px;
+}
+.fa {
+  padding: 8px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 25%; 
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form {
+  width: 50%; 
+}
+
+
+
+/* Customize testimonial style */
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(#1f1e1f, #19191b); 
+  border-radius: 5px;
+ 
+  
+}
+
+.testimonial h5 {
+  margin-top: 10px;
+  font-size: 18px;
+  color:  #c300ff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.testimonialsec {
+  background-image: linear-gradient(#1f1e1f, #19191b); 
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+
+.avatar {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  margin-right: 10px;
+  margin-bottom: 30px; 
+}
+.teammember{
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+
+
+.chooseus{
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+.mission{
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+.welcome{
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
