@@ -1,0 +1,48 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color:rgb(20, 20, 20);
+}
+
+body {
+    font-size: 24px;
+    line-height: 20px;
+    font-family: Inter;
+    color: rgb(240, 240, 240);
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 20px;
+    font-family: Book Antiqua;
+    color: (240, 240, 240);
+    text-align: center;
+    padding: 10px;
+}
+
+.navBar {
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+    font-family: Inter;
+  }
+
+.navBar a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+.navBar a:hover {
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+  }
+
+.navBar a.active {
+    background-color: #7304aa;
+    color: rgb(255, 255, 255);
+  }
+
+/* <!-- Restarted but will be finished by Monday --> *\
