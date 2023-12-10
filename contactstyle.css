@@ -3,7 +3,8 @@ body, html {
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-weight: lighter;
-    background-color: #101010;
+    background-color: #101010; 
+   
 }
 
 /* nav bar */
@@ -237,8 +238,8 @@ input[type="submit"]:hover {
 }
 #get-in-touch {
   display: flex;
-    width: 100%;
-
+   max-width: 100%;
+margin-inline: auto;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
@@ -275,18 +276,19 @@ input[type="submit"]:hover {
     align-items: center;
     width: 100%;
     margin-left: 50px;
+    margin-top: 20px;
 }
 
 .info-square {
     background-color: #fff;
-
     border-radius: 8px;
     text-align: center;
     width: calc(50% - 10px); 
     height: 150px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding: 15px;
     box-sizing: border-box;
+    flex-basis: calc(50% - 10px); 
 }
 
 .info-square img {
@@ -297,20 +299,46 @@ input[type="submit"]:hover {
 .info-square p{
     color: #101010;
     overflow-wrap: break-word;
+    flex-shrink: 1;
+   
 }
 
-@media only screen and (max-width: 768px) {
-    #info-container {
-    
-        align-items: center;
-        flex-direction: column; /* Stack items vertically on small screens */
-    }
+/* Footer styling */
+footer {
+    background-color: #101010;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
 
-    #info{
-        order:2;
-    }
 
-    .info-square {
-        width: 100%; /* Full width for smaller screens, one square per row */
-    }
+/* Navigation links in the footer */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; /* Adjust as needed */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #9867FF;
 }
