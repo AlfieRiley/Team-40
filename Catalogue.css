@@ -1,48 +1,114 @@
 html {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-    background-color:rgb(20, 20, 20);
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color:rgb(20, 20, 20);
 }
 
 body {
-    font-size: 24px;
-    line-height: 20px;
-    font-family: Inter;
-    color: rgb(240, 240, 240);
+  font-size: 24px;
+  line-height: 20px;
+  font-family: Inter;
+  color: rgb(240, 240, 240);
 }
 
 h1 {
-    font-size: 96px;
-    line-height: 20px;
-    font-family: Book Antiqua;
-    color: (240, 240, 240);
-    text-align: center;
-    padding: 10px;
+  font-size: 96px;
+  line-height: 20px;
+  font-family: Book Antiqua;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  padding: 10px;
 }
 
 .navBar {
-    background-color: rgb(20, 20, 20);
-    overflow: hidden;
-    font-family: Inter;
-  }
+  display: flex;
+  align-items: center;
+  background-color: rgb(29, 29, 29);
+  overflow: hidden;
+  font-family: Inter;
+  margin: 0;
+}
 
 .navBar a {
-    float: left;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-  }
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px;
+}
 
-.navBar a:hover {
-    background-color: rgb(25, 25, 25);
-    color: rgb(255, 255, 255);
-  }
+.navBar a img {
+vertical-align: middle;
+}
 
-.navBar a.active {
-    background-color: #7304aa;
-    color: rgb(255, 255, 255);
-  }
+.navBar:hover .dropdown .dropbutton {
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+}
 
+.dropdown {
+display: inline-block;
+}
+
+.dropdown .dropbutton {
+font-size: 24px;
+text-align: center;
+text-decoration: none;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+width: 20%;
+box-sizing: border-box;
+transition: width 0.3s ease;
+}
+
+.dropbutton {
+vertical-align: middle;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: rgb(44, 44, 44);
+min-width: 70%;
+min-height: 50%;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.153);
+z-index: 1;
+transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropbutton {
+width: 100%;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: rgb(50, 50, 50);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* .BigImageSquare {
+height: 300px;
+width: 300px;
+float: left;
+padding: 20px;
+outline: rgb(240, 240, 240);
+background-color: rgb(240, 240, 240);
+
+
+} */
 /* <!-- Restarted but will be finished by Monday --> *\

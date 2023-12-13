@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Catalogue.css"/>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Catalogue.css"/>
         <title>Nova: Electronics, Appliances, Phones & More</title>
     </head>     
 
-    <body class="coreText">
+    <body>
         <div name="Navigation-Bar" class="navBar">
             <a href="#">
-                <img src="Nova Logo.png" width="60" height="60">
+                <img src="Nova Logo.png" width="48" height="48">
             </a>
-            <a class="active" href="#">Shop</a>
+            <a href="#">Shop</a>
             <a href="#">About Us</a>
             
             <div class="dropdown">
                 <button class="dropbutton">Categories
                     <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-content">
-                    <a href="#">Phones</a>
-                    <a href="#">Laptops</a>
-                    <a href="#">Kitchenware</a>
-                    <a href="#">Watches</a>
-                    <a href="#">Headphones</a>
+                <div class="dropdown-content" id="categoryMenu">
+                    <a href="#" data-category="phones">Phones</a>
+                    <a href="#" data-category="laptops">Laptops</a>
+                    <a href="#" data-category="kitchenware">Kitchenware</a>
+                    <a href="#" data-category="watches">Watches</a>
+                    <a href="#" data-category="headphones">Headphones</a>
                 </div>
             </div>
         </div>
+
+        <div class="content">
+            <div id="categoryInfo">
+                <!-- Category-specific information will be displayed here FOR LATER (DATABASE IMPLEMENTATION)-->
+            </div>
+        </div>
+    
+        <script src="#"></script> <!-- Script for displaying the data for each category on click  FOR LATER (DB IMPLEMENTATION)-->
 
         <h1>What's New?</h1>
 
@@ -36,7 +44,9 @@
                 
             </p>
         </div>
+        
+        <div class="BigImageSquare"></div>
+
     </body>
 </html>
 
-<!-- Restarted but will be finished by Monday -->
