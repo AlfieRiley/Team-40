@@ -1,0 +1,116 @@
+/* Resetting default styles for body and HTML */
+/* Resetting default styles for body and HTML */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    background-color: #101010;
+    color: white; /* Setting default text color for body and html text */
+}
+
+/* Container styling 
+.container {
+    padding: 5%;
+}
+*/
+/* Additional styles for specific elements */
+h4,
+label,
+.form-check-label,
+.text-muted {
+    color: white;
+}
+
+/* Logo styling */
+img.img-fluid {
+    width: 100px;
+}
+
+/* Checkout page header styling */
+.py-5 h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Form styling */
+form {
+    margin-top: 2em;
+}
+
+
+/* Form section heading styling */
+.mb-3 h4 {
+    color: white;
+}
+
+/* Form input styling */
+.form-label {
+    color: white;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #101010;
+    color: white;
+    font-size: 14px;
+}
+
+/* Styling for focused fields */
+.form-control:focus {
+    border-color: #d58bff;
+    outline: none;
+    resize: vertical;
+}
+
+/* Styling for placeholder text */
+.form-control::placeholder {
+    color: rgb(198, 198, 198);
+    opacity: 0.7;
+}
+
+/* Radio button and label styling */
+.form-check-input {
+    margin-right: 5px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #9867FF;
+    color: rgb(14, 14, 14);
+    width: auto;
+    flex-shrink: 0;
+    min-width: 120px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #5724c5;
+}
+
+/* Order summary styling */
+.list-group-item {
+    background-color: #101010;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Badge styling */
+.badge {
+    background-color: #9867FF;
+}
+
+/* Responsive margin for small screens */
+.my-5 {
+    margin-top: 5%;
+}
