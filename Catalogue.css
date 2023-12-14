@@ -20,6 +20,20 @@ h1 {
   padding: 10px;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 20px;
+  font-family: Inter;
+  color: rgb(240, 240, 240)
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Inter;
+  color: rgb(240, 240, 240)
+}
+
 .navBar {
   display: flex;
   align-items: center;
@@ -101,14 +115,25 @@ background-color: rgb(50, 50, 50);
 display: block;
 }
 
-/* .BigImageSquare {
-height: 300px;
-width: 300px;
-float: left;
-padding: 20px;
-outline: rgb(240, 240, 240);
-background-color: rgb(240, 240, 240);
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.image-with-description {
+  text-align: center;
+  margin: 20px;
+}
 
-} */
-/* <!-- Restarted but will be finished by Monday --> *\
+.image-with-description img {
+  width: 250px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  border-radius: 20px;
+}
+
+.image-with-description p {
+  color: rgb(240, 240, 240);
+  margin-top: 10px;
+}
