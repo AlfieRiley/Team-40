@@ -13,7 +13,7 @@
       color: #ffffff;
     }
 
-    #navbar {
+    #basketnavbar {
       background-color: #660066;
       padding: 10px;
       display: flex;
@@ -21,41 +21,41 @@
       align-items: center;
     }
 
-    #navbar img {
+    #basketnavbar img {
       width: 40px;
       height: 40px;
     }
 
-    #search-bar {
+    #basketsearch-bar {
       flex: 1;
       margin: 0 20px;
     }
 
-    #search-bar input {
+    #basketsearch-bar input {
       width: 60%;
       padding: 8px;
       border: none;
       border-radius: 5px;
     }
 
-    #home-bar{
+    #baskethome-bar{
       display: flex;
       align-items: center;
     }
 
-    #home-bar img{
+    #baskethome-bar img{
       width: 30px;
       height: 30px;
       border-radius: 50%;
       margin-right: 10px;
     }
 
-    #profile-bar {
+    #basketprofile-bar {
       display: flex;
       align-items: center;
     }
 
-    #profile-bar img {
+    #basketprofile-bar img {
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -74,7 +74,7 @@
       margin-right: 10px;
     }
 
-    #cart-container {
+    #basketcart-container {
   max-width: 600px;
   margin: 20px auto;
   background-color: #1a1a1a;
@@ -102,7 +102,7 @@
       width: 300px; 
     }
 
-    #total {
+    #basket-total {
       font-size: 1.2em;
       margin-top: 10px;
       text-align: right;
@@ -120,7 +120,7 @@
       background-color: #4d004d;
     }
 
-    #checkout-button {
+    #basketcheckout-button {
       margin-top: 20px;
       padding: 10px;
       background-color: #660066;
@@ -129,11 +129,11 @@
       cursor: pointer;
     }
 
-    #checkout-button:hover {
+    #basketcheckout-button:hover {
       background-color: #4d004d;
     }
 
-    .remove-button {
+    .basketremove-button {
       background-color: #4d004d;
       color: #fff;
       border: none;
@@ -141,7 +141,7 @@
       cursor: pointer;
     }
 
-    .remove-button:hover {
+    .basketremove-button:hover {
       background-color: #4d004d;
     }
 
@@ -150,15 +150,15 @@
 <body>
 
   <nav>
-<div id="navbar">
+<div id="basketnavbar">
   <img src="logo.png" alt="Icon">
-  <div id="search-bar">
+  <div id="basketsearch-bar">
     <input type="text" placeholder="Search...">
   </div>
-  <div id="home-bar">
+  <div id="baskethome-bar">
     <img src="homeicon.png" alt="homepage">
     <span>Home</span>
-  <div id="profile-bar">
+  <div id="basketprofile-bar">
     <img src="profileicon.jpeg" alt="Profile">
     <span>Profile</span>
   </div>
@@ -170,7 +170,7 @@
 </nav>
 
 
-<div id="cart-container">
+<div id="basketcart-container">
   <h2>Review your basket.</h2>
   <table>
     <thead>
@@ -181,13 +181,13 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody id="cart-items">
+    <tbody id="basketcart-items">
       <!-- Cart items will be dynamically added here -->
     </tbody>
   </table>
-  <div id="total">Total: £<span id="cart-total">0.00</span></div>
-  <button id="checkout-button">Checkout</button>
-  <button id="removeitem-button">Remove item(s)</button>
+  <div id="baskettotal">Total: £<span id="cart-total">0.00</span></div>
+  <button id="basketcheckout-button">Checkout</button>
+  <button id="basketremoveitem-button">Remove item(s)</button>
 </div>
 
 <script>
